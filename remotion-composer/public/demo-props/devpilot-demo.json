@@ -1,0 +1,220 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "primaryColor": "#7C5BFF",
+    "accentColor": "#22D3EE",
+    "backgroundColor": "#060821",
+    "surfaceColor": "#141A4A",
+    "textColor": "#F8FAFC",
+    "mutedTextColor": "#94A3B8",
+    "chartColors": [
+      "#22D3EE",
+      "#7C5BFF",
+      "#F472B6",
+      "#34D399",
+      "#F59E0B",
+      "#FB7185"
+    ],
+    "captionHighlightColor": "#22D3EE"
+  },
+  "cuts": [
+    {
+      "id": "dp-hero",
+      "source": "",
+      "type": "hero_title",
+      "in_seconds": 0,
+      "out_seconds": 5,
+      "text": "DevPilot",
+      "subtitle": "Agent-orchestrated SDLC — specs, sprints, and ships that actually ship",
+      "backgroundColor": "rgba(6,8,33,0.15)",
+      "particles": "light-rays",
+      "vignette": true
+    },
+    {
+      "id": "dp-act1",
+      "source": "",
+      "type": "section_title",
+      "in_seconds": 5,
+      "out_seconds": 9,
+      "text": "ACT I — The Problem",
+      "subtitle": "Six tools, zero lineage, every sprint a blank slate",
+      "accentColor": "#F472B6",
+      "backgroundColor": "rgba(6,8,33,0.25)",
+      "particles": "fireflies",
+      "vignette": true
+    },
+    {
+      "id": "dp-compare",
+      "source": "",
+      "type": "comparison",
+      "in_seconds": 9,
+      "out_seconds": 15,
+      "title": "Manual SDLC vs DevPilot pipeline",
+      "leftLabel": "Manual",
+      "leftValue": "6 tools · 0 lineage",
+      "rightLabel": "DevPilot",
+      "rightValue": "1 CLI · full provenance",
+      "accentColor": "#7C5BFF",
+      "backgroundColor": "rgba(20,26,74,0.55)",
+      "particles": "sparkles",
+      "vignette": true
+    },
+    {
+      "id": "dp-terminal-1",
+      "source": "",
+      "type": "terminal_scene",
+      "in_seconds": 15,
+      "out_seconds": 23,
+      "title": "~/devpilot",
+      "prompt": "dp›",
+      "accentColor": "#22D3EE",
+      "backgroundColor": "rgba(6,8,33,0.6)",
+      "steps": [
+        { "kind": "cmd", "text": "dp sprint auto --orchestrate --db", "holdSeconds": 0.4 },
+        { "kind": "out", "text": "→ parsing sprint DAG … 18 tasks across 5 waves", "holdSeconds": 0.3 },
+        { "kind": "out", "text": "→ dispatching 4 parallel agents (lint: AVIS-004)", "holdSeconds": 0.3 },
+        { "kind": "pill", "text": "Wave 1/5 · 4 agents active", "color": "#22D3EE", "durationSeconds": 1.6 },
+        { "kind": "out", "text": "✓ build green · 0 warnings · 412ms", "holdSeconds": 0.3 },
+        { "kind": "pill", "text": "Wave 5/5 · done · 3m42s", "color": "#34D399", "durationSeconds": 1.2 }
+      ],
+      "particles": "fireflies",
+      "vignette": true
+    },
+    {
+      "id": "dp-reveal-tasks",
+      "source": "",
+      "type": "stat_reveal",
+      "in_seconds": 23,
+      "out_seconds": 28,
+      "text": "3,100",
+      "subtitle": "tasks orchestrated across 64 projects · last 30 days",
+      "accentColor": "#22D3EE",
+      "backgroundColor": "rgba(20,26,74,0.4)",
+      "particles": "sparkles",
+      "vignette": true
+    },
+    {
+      "id": "dp-bars-velocity",
+      "source": "",
+      "type": "bar_chart",
+      "in_seconds": 28,
+      "out_seconds": 35,
+      "title": "Sprint throughput per engineer-week",
+      "chartData": [
+        { "label": "Hand-run", "value": 12 },
+        { "label": "DP-assisted", "value": 47 },
+        { "label": "DP-orchestrated", "value": 94 }
+      ],
+      "chartColors": ["#FB7185", "#F59E0B", "#34D399"],
+      "showGrid": true,
+      "showValues": true,
+      "backgroundColor": "rgba(6,8,33,0.45)",
+      "particles": "sparkles",
+      "vignette": true
+    },
+    {
+      "id": "dp-callout",
+      "source": "",
+      "type": "callout",
+      "in_seconds": 35,
+      "out_seconds": 41,
+      "title": "Parallel agents. Zero drift.",
+      "text": "Wave-safe dispatch, DECOMP-001 lint, AVIS-004 verification gate — every commit is a green build.",
+      "callout_type": "tip",
+      "accentColor": "#22D3EE",
+      "color": "#F8FAFC",
+      "backgroundColor": "rgba(20,26,74,0.55)",
+      "particles": "fireflies",
+      "vignette": true
+    },
+    {
+      "id": "dp-terminal-2",
+      "source": "",
+      "type": "terminal_scene",
+      "in_seconds": 41,
+      "out_seconds": 48,
+      "title": "~/devpilot · sprint ops",
+      "prompt": "dp›",
+      "accentColor": "#7C5BFF",
+      "backgroundColor": "rgba(6,8,33,0.6)",
+      "steps": [
+        { "kind": "cmd", "text": "dp sprint wrap DP-SPEC-INGEST-CLI-001", "holdSeconds": 0.35 },
+        { "kind": "out", "text": "→ summary MD + PDF · learnings → DB · follow-up sprint queued", "holdSeconds": 0.3 },
+        { "kind": "pill", "text": "quality 85 · AVIS-004 green", "color": "#34D399", "durationSeconds": 1.4 },
+        { "kind": "cmd", "text": "dp insights analyze", "holdSeconds": 0.3 },
+        { "kind": "out", "text": "health 91 · velocity +11× · time-to-PR -62%", "holdSeconds": 0.3 }
+      ],
+      "particles": "sparkles",
+      "vignette": true
+    },
+    {
+      "id": "dp-act2",
+      "source": "",
+      "type": "section_title",
+      "in_seconds": 48,
+      "out_seconds": 52,
+      "text": "ACT II — The Result",
+      "subtitle": "Your SDLC as a single, auditable pipeline",
+      "accentColor": "#34D399",
+      "backgroundColor": "rgba(6,8,33,0.25)",
+      "particles": "light-rays",
+      "vignette": true
+    },
+    {
+      "id": "dp-reveal-velocity",
+      "source": "",
+      "type": "stat_reveal",
+      "in_seconds": 52,
+      "out_seconds": 57,
+      "text": "11×",
+      "subtitle": "velocity uplift across shipped sprints",
+      "accentColor": "#F59E0B",
+      "backgroundColor": "rgba(20,26,74,0.4)",
+      "particles": "petals",
+      "vignette": true
+    },
+    {
+      "id": "dp-close",
+      "source": "",
+      "type": "text_card",
+      "in_seconds": 57,
+      "out_seconds": 63,
+      "text": "DevPilot — your SDLC, on autopilot.",
+      "subtitle": "One CLI. Every project. Full provenance.",
+      "color": "#F8FAFC",
+      "backgroundColor": "rgba(6,8,33,0.35)",
+      "particles": "mist",
+      "vignette": true
+    }
+  ],
+  "overlays": [
+    {
+      "type": "provider_chip",
+      "in_seconds": 15.5,
+      "out_seconds": 22.5,
+      "text": "Claude · DeepSeek · Groq",
+      "subtitle": "Vendor-agnostic AIProvider trait",
+      "accentColor": "#22D3EE",
+      "position": "top-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 31,
+      "out_seconds": 34.5,
+      "text": "+683%",
+      "subtitle": "vs hand-run baseline",
+      "accentColor": "#34D399",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 41.3,
+      "out_seconds": 44,
+      "text": "Ship. Wrap. Learn.",
+      "subtitle": "Automated loop",
+      "accentColor": "#7C5BFF"
+    }
+  ],
+  "captions": [],
+  "audio": {}
+}

@@ -45,6 +45,7 @@ import { TerminalScene } from "./components/TerminalScene";
 import type { TerminalStep } from "./components/TerminalScene";
 import { ProviderChip } from "./components/ProviderChip";
 import type { ParticleType } from "./components/ParticleOverlay";
+import { CinematicBackground3D } from "./components/CinematicBackground3D";
 import { resolveTheme, type ThemeConfig, DEFAULT_THEME } from "./Root";
 
 // Load Space Grotesk font for cinematic typography
@@ -763,8 +764,8 @@ export const Explainer: React.FC<ExplainerProps> = (props) => {
 
   return (
     <AbsoluteFill style={{ background: theme.backgroundColor, fontFamily: theme.headingFont || fontFamily }}>
-      {/* Layer 0: Animated gradient background — driven by theme */}
-      <AnimatedBackground theme={theme} />
+      {/* Layer 0: Cinematic 3D background — perspective grid, rotating cube, parallax orbs */}
+      <CinematicBackground3D theme={theme} />
 
       {/* Layer 1: Visual scenes */}
       {cuts.map((cut) => {
