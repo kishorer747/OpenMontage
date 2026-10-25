@@ -1,0 +1,5 @@
+# pnpm 12 fails install on unanswered build scripts (strict). pnpm 10.28.2 silently
+# skipped these, and builds passed that way, so the answer is false: same (empty)
+# allow-list as before (DP-PNPM-SWEEP-001-T8).
+allowBuilds:
+  esbuild: false

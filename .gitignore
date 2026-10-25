@@ -79,3 +79,8 @@ remotion-composer/public/*
 remotion-composer/public/demo-props/test-*
 remotion-composer/public/demo-props/talking-head-*
 remotion-composer/public/demo-props/caption-burn-*
+
+# pnpm only (DP-PNPM-SWEEP-001-T8)
+package-lock.json
+bun.lock
+yarn.lock
