@@ -7,7 +7,7 @@ setup:
 	pip install -r requirements.txt
 	@echo ""
 	@echo "==> Installing Remotion composer..."
-	cd remotion-composer && npm install
+	cd remotion-composer && pnpm install --frozen-lockfile
 	@echo ""
 	@echo "==> Installing free offline TTS (Piper)..."
 	pip install piper-tts || echo "  [skip] piper-tts install failed — TTS will use cloud providers instead"
